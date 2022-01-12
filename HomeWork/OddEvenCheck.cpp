@@ -5,40 +5,30 @@
 
 int main()
 {
-	//int Arr[10];
-	//for (int i = 0; i < 10; i += 1)
-	//{
-	//	Arr[i] = i;
-	//}
 
+	// even Check
 
+	int arr[10] = { 0, };
+	int index = 0;
 
+	while (index < 10)
 	{
-		// even Check
-		int Arr[10] = { 0, };
-		int Index = 0;
-		while (Index < 10)
-		{
-			Arr[Index] = (Index * 2)+2;
-			Index++;
-		}
-
-		{
-			//odd Check
-			int Arr[10] = { 0, };
-			int Index = 0;
-			while (Index<10)
-			{
-				// 0 부터 시작해서
-				Arr[Index]=(Index*2)+1;
-				Index++;
-				// 0 제외
-				// 2 4 8 10 12 14 16 18 
-				// 배열이 가득찰때까지 홀수로만 채워주세요
-			}
-
-			int a = 0;
-		}
-
+		arr[index] = (index * 2) + 2;
+		index++;
 	}
+
+
+	//odd check
+
+	int arr[10] = { 0, };
+	int index = 0;
+
+	while (index<10)
+	{
+	    arr[index] = (index*2) + 1;
+	    index++;
+	}
+
+	return 0;
 }
+
