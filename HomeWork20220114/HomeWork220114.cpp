@@ -89,15 +89,74 @@ void Cut(const char* _Sorce, int _Start, int _End, char* _Result)
 		_Result[i] = _Sorce[Startnum + i];
 	}
 }
+int Textpush(char* _Text, int start, int textEnd, int num)
+{
+	for (int i = (textEnd - 1); i >= start; i--)
+	{
+		_Text[i + num] = _Text[i];
+	}
+	return textEnd + num;
+}
 
 void TextChange(char* _Text, const char* _Prev, const char* _Next)
 {
+	int PrevCheck = 0;
+	int ChgStrCheck = 0;
+	int TextLenth = 0;
+
+	while (_Prev[PrevCheck] == '\0')
+	{
+		PrevCheck++;
+	}
+
+	while (_Next[ChgStrCheck] == '\0')
+	{
+		ChgStrCheck++;
+	}
+
+	while (_Text[TextLenth] == '\0')
+	{
+		TextLenth++;
+	}
+
+
+
+	int Wcheck = 0;
+	while (Wcheck == TextLenth)
+	{
+		if (_Text[Wcheck] == _Prev[0])
+			{
+				for (int j = 0; j < PrevCheck; j++)
+				{
+					_Text[Wcheck] == _Prev[j];
+				}
+					
+			}
+			else
+				continue;
+
+	}
+	//for (int i = 0; i < TextLenth; i++)
+	//{
+	//	if (_Text[i] == _Prev[0])
+	//	{
+	//		for (int j = 0; j < PrevCheck; j++)
+	//		{
+	//			_Text[i] == _Prev[j];
+	//		}
+	//		
+	//	}
+	//	else
+	//		continue;
+
+	//}
+	
 
 }
 
+
 int main()
 {
-
 	
 	//	char Text[5];
 

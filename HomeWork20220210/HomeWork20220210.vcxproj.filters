@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="ConsoleScreen\ConsoleScreen.cpp" />
+    <ClCompile Include="ConsoleScreen\ConsoleGlobalInst.cpp">
+      <Filter>ConTents</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleScreen\Monster.cpp">
+      <Filter>ConTents</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleScreen\Player.cpp">
+      <Filter>ConTents</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleScreen\ConsoleMath.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleScreen\ConsoleObject.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleScreen\TextScreen.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ConsoleScreen\ConsoleGlobalInst.h">
+      <Filter>ConTents</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleScreen\Monster.h">
+      <Filter>ConTents</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleScreen\Player.h">
+      <Filter>ConTents</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleScreen\TextScreen.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleScreen\ConsoleMath.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleScreen\ConsoleObject.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ConTents">
+      <UniqueIdentifier>{20209af0-60e5-443b-b271-a0e72d448807}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{0caa86aa-9a18-489a-af25-6fbd36cf6aad}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
